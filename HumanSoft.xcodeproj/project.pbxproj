@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,14 @@
 		4768359525C8C7E5006AC5FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4768359325C8C7E5006AC5FB /* Main.storyboard */; };
 		4768359725C8C7E8006AC5FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4768359625C8C7E8006AC5FB /* Assets.xcassets */; };
 		4768359A25C8C7E8006AC5FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4768359825C8C7E8006AC5FB /* LaunchScreen.storyboard */; };
+		476835AA25C8D988006AC5FB /* APIConfigurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476835A925C8D988006AC5FB /* APIConfigurations.swift */; };
+		476835AD25C8D9BB006AC5FB /* GenericClientApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476835AC25C8D9BB006AC5FB /* GenericClientApi.swift */; };
+		476835B025C8D9E7006AC5FB /* EndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476835AF25C8D9E7006AC5FB /* EndPoints.swift */; };
+		476835B325C8DA12006AC5FB /* ConstantsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476835B225C8DA12006AC5FB /* ConstantsAPI.swift */; };
+		476835B625C8DA37006AC5FB /* GalleryAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476835B525C8DA37006AC5FB /* GalleryAPI.swift */; };
+		476835BB25C8E7BA006AC5FB /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476835BA25C8E7BA006AC5FB /* UserInfo.swift */; };
+		476835BE25C8E89B006AC5FB /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476835BD25C8E89B006AC5FB /* Album.swift */; };
+		476835C125C8E940006AC5FB /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476835C025C8E940006AC5FB /* Photo.swift */; };
 		861221697899A0B9BF9ED6CF /* Pods_HumanSoft.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54D00626067DC3377A22A038 /* Pods_HumanSoft.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +33,14 @@
 		4768359625C8C7E8006AC5FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4768359925C8C7E8006AC5FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4768359B25C8C7E8006AC5FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		476835A925C8D988006AC5FB /* APIConfigurations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConfigurations.swift; sourceTree = "<group>"; };
+		476835AC25C8D9BB006AC5FB /* GenericClientApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericClientApi.swift; sourceTree = "<group>"; };
+		476835AF25C8D9E7006AC5FB /* EndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoints.swift; sourceTree = "<group>"; };
+		476835B225C8DA12006AC5FB /* ConstantsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantsAPI.swift; sourceTree = "<group>"; };
+		476835B525C8DA37006AC5FB /* GalleryAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryAPI.swift; sourceTree = "<group>"; };
+		476835BA25C8E7BA006AC5FB /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
+		476835BD25C8E89B006AC5FB /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		476835C025C8E940006AC5FB /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		54D00626067DC3377A22A038 /* Pods_HumanSoft.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HumanSoft.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		874CC4F90FF4692F4488FD3D /* Pods-HumanSoft.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HumanSoft.debug.xcconfig"; path = "Target Support Files/Pods-HumanSoft/Pods-HumanSoft.debug.xcconfig"; sourceTree = "<group>"; };
 		E4321E3F6A0A71AF0AC45DDA /* Pods-HumanSoft.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HumanSoft.release.xcconfig"; path = "Target Support Files/Pods-HumanSoft/Pods-HumanSoft.release.xcconfig"; sourceTree = "<group>"; };
@@ -48,7 +64,6 @@
 				874CC4F90FF4692F4488FD3D /* Pods-HumanSoft.debug.xcconfig */,
 				E4321E3F6A0A71AF0AC45DDA /* Pods-HumanSoft.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -73,6 +88,8 @@
 		4768358C25C8C7E5006AC5FB /* HumanSoft */ = {
 			isa = PBXGroup;
 			children = (
+				476835B825C8DA7D006AC5FB /* Models */,
+				476835A825C8D48E006AC5FB /* NetworkLayer */,
 				4768358D25C8C7E5006AC5FB /* AppDelegate.swift */,
 				4768358F25C8C7E5006AC5FB /* SceneDelegate.swift */,
 				4768359125C8C7E5006AC5FB /* ViewController.swift */,
@@ -82,6 +99,28 @@
 				4768359B25C8C7E8006AC5FB /* Info.plist */,
 			);
 			path = HumanSoft;
+			sourceTree = "<group>";
+		};
+		476835A825C8D48E006AC5FB /* NetworkLayer */ = {
+			isa = PBXGroup;
+			children = (
+				476835A925C8D988006AC5FB /* APIConfigurations.swift */,
+				476835AC25C8D9BB006AC5FB /* GenericClientApi.swift */,
+				476835AF25C8D9E7006AC5FB /* EndPoints.swift */,
+				476835B225C8DA12006AC5FB /* ConstantsAPI.swift */,
+				476835B525C8DA37006AC5FB /* GalleryAPI.swift */,
+			);
+			path = NetworkLayer;
+			sourceTree = "<group>";
+		};
+		476835B825C8DA7D006AC5FB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				476835BA25C8E7BA006AC5FB /* UserInfo.swift */,
+				476835BD25C8E89B006AC5FB /* Album.swift */,
+				476835C025C8E940006AC5FB /* Photo.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		739736C6757D6D6632CCEC0C /* Frameworks */ = {
@@ -208,7 +247,15 @@
 			files = (
 				4768359225C8C7E5006AC5FB /* ViewController.swift in Sources */,
 				4768358E25C8C7E5006AC5FB /* AppDelegate.swift in Sources */,
+				476835AD25C8D9BB006AC5FB /* GenericClientApi.swift in Sources */,
+				476835B625C8DA37006AC5FB /* GalleryAPI.swift in Sources */,
 				4768359025C8C7E5006AC5FB /* SceneDelegate.swift in Sources */,
+				476835B025C8D9E7006AC5FB /* EndPoints.swift in Sources */,
+				476835B325C8DA12006AC5FB /* ConstantsAPI.swift in Sources */,
+				476835C125C8E940006AC5FB /* Photo.swift in Sources */,
+				476835BB25C8E7BA006AC5FB /* UserInfo.swift in Sources */,
+				476835AA25C8D988006AC5FB /* APIConfigurations.swift in Sources */,
+				476835BE25C8E89B006AC5FB /* Album.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
