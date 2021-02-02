@@ -13,6 +13,7 @@
 		4768359525C8C7E5006AC5FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4768359325C8C7E5006AC5FB /* Main.storyboard */; };
 		4768359725C8C7E8006AC5FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4768359625C8C7E8006AC5FB /* Assets.xcassets */; };
 		4768359A25C8C7E8006AC5FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4768359825C8C7E8006AC5FB /* LaunchScreen.storyboard */; };
+		861221697899A0B9BF9ED6CF /* Pods_HumanSoft.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54D00626067DC3377A22A038 /* Pods_HumanSoft.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		4768359625C8C7E8006AC5FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4768359925C8C7E8006AC5FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4768359B25C8C7E8006AC5FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54D00626067DC3377A22A038 /* Pods_HumanSoft.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HumanSoft.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		874CC4F90FF4692F4488FD3D /* Pods-HumanSoft.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HumanSoft.debug.xcconfig"; path = "Target Support Files/Pods-HumanSoft/Pods-HumanSoft.debug.xcconfig"; sourceTree = "<group>"; };
+		E4321E3F6A0A71AF0AC45DDA /* Pods-HumanSoft.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HumanSoft.release.xcconfig"; path = "Target Support Files/Pods-HumanSoft/Pods-HumanSoft.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				861221697899A0B9BF9ED6CF /* Pods_HumanSoft.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		079EDC4F7F485E0AAE85FEBC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				874CC4F90FF4692F4488FD3D /* Pods-HumanSoft.debug.xcconfig */,
+				E4321E3F6A0A71AF0AC45DDA /* Pods-HumanSoft.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		4768358125C8C7E5006AC5FB = {
 			isa = PBXGroup;
 			children = (
 				4768358C25C8C7E5006AC5FB /* HumanSoft */,
 				4768358B25C8C7E5006AC5FB /* Products */,
+				079EDC4F7F485E0AAE85FEBC /* Pods */,
+				739736C6757D6D6632CCEC0C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +84,14 @@
 			path = HumanSoft;
 			sourceTree = "<group>";
 		};
+		739736C6757D6D6632CCEC0C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				54D00626067DC3377A22A038 /* Pods_HumanSoft.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4768359E25C8C7E8006AC5FB /* Build configuration list for PBXNativeTarget "HumanSoft" */;
 			buildPhases = (
+				77D6AEE0214B98555068A78D /* [CP] Check Pods Manifest.lock */,
 				4768358625C8C7E5006AC5FB /* Sources */,
 				4768358725C8C7E5006AC5FB /* Frameworks */,
 				4768358825C8C7E5006AC5FB /* Resources */,
+				2E3FCD447764332825D0B017 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2E3FCD447764332825D0B017 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HumanSoft/Pods-HumanSoft-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HumanSoft/Pods-HumanSoft-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HumanSoft/Pods-HumanSoft-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		77D6AEE0214B98555068A78D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HumanSoft-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4768358625C8C7E5006AC5FB /* Sources */ = {
@@ -283,6 +352,7 @@
 		};
 		4768359F25C8C7E8006AC5FB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 874CC4F90FF4692F4488FD3D /* Pods-HumanSoft.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +372,7 @@
 		};
 		476835A025C8C7E8006AC5FB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4321E3F6A0A71AF0AC45DDA /* Pods-HumanSoft.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
