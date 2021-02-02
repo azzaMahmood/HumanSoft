@@ -24,6 +24,7 @@
 		476835D725C90F3E006AC5FB /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476835D625C90F3E006AC5FB /* Extentions.swift */; };
 		476835E225C91075006AC5FB /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476835E125C91075006AC5FB /* ProfileViewModel.swift */; };
 		476835E525C911D3006AC5FB /* AlbumTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476835E425C911D3006AC5FB /* AlbumTableViewCell.swift */; };
+		476835F225C9C572006AC5FB /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476835F125C9C572006AC5FB /* Dynamic.swift */; };
 		861221697899A0B9BF9ED6CF /* Pods_HumanSoft.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54D00626067DC3377A22A038 /* Pods_HumanSoft.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +48,7 @@
 		476835D625C90F3E006AC5FB /* Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
 		476835E125C91075006AC5FB /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		476835E425C911D3006AC5FB /* AlbumTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumTableViewCell.swift; sourceTree = "<group>"; };
+		476835F125C9C572006AC5FB /* Dynamic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
 		54D00626067DC3377A22A038 /* Pods_HumanSoft.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HumanSoft.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		874CC4F90FF4692F4488FD3D /* Pods-HumanSoft.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HumanSoft.debug.xcconfig"; path = "Target Support Files/Pods-HumanSoft/Pods-HumanSoft.debug.xcconfig"; sourceTree = "<group>"; };
 		E4321E3F6A0A71AF0AC45DDA /* Pods-HumanSoft.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HumanSoft.release.xcconfig"; path = "Target Support Files/Pods-HumanSoft/Pods-HumanSoft.release.xcconfig"; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 		4768358C25C8C7E5006AC5FB /* HumanSoft */ = {
 			isa = PBXGroup;
 			children = (
+				476835F025C9C531006AC5FB /* Utilities */,
 				476835DE25C90FD9006AC5FB /* Profile */,
 				476835D525C90F21006AC5FB /* SupportingFiles */,
 				476835D425C90E3E006AC5FB /* Assets */,
@@ -154,6 +157,14 @@
 				476835E425C911D3006AC5FB /* AlbumTableViewCell.swift */,
 			);
 			path = Profile;
+			sourceTree = "<group>";
+		};
+		476835F025C9C531006AC5FB /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				476835F125C9C572006AC5FB /* Dynamic.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 		739736C6757D6D6632CCEC0C /* Frameworks */ = {
@@ -284,6 +295,7 @@
 				476835B625C8DA37006AC5FB /* GalleryAPI.swift in Sources */,
 				4768359025C8C7E5006AC5FB /* SceneDelegate.swift in Sources */,
 				476835B025C8D9E7006AC5FB /* EndPoints.swift in Sources */,
+				476835F225C9C572006AC5FB /* Dynamic.swift in Sources */,
 				476835B325C8DA12006AC5FB /* ConstantsAPI.swift in Sources */,
 				476835C125C8E940006AC5FB /* Photo.swift in Sources */,
 				476835D725C90F3E006AC5FB /* Extentions.swift in Sources */,

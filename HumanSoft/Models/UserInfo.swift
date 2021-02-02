@@ -10,7 +10,7 @@ import Foundation
 // MARK: - UserInfo
 struct UserInfo: Codable {
     let id: Int
-    let name, username, email: String
+    var name, username, email: String
     let address: Address
     let phone, website: String
     let company: Company
