@@ -48,7 +48,7 @@
                                 <rect key="frame" x="8" y="242" width="386" height="620"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="Bef-YG-hwo">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="AlbumTableViewCell" id="Bef-YG-hwo" customClass="AlbumTableViewCell" customModule="HumanSoft" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="386" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Bef-YG-hwo" id="hKr-Pd-Axu">
@@ -68,6 +68,9 @@
                                                 <constraint firstItem="SMy-tQ-udl" firstAttribute="leading" secondItem="hKr-Pd-Axu" secondAttribute="leadingMargin" constant="3" id="c3X-sB-dpT"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="albumTitleLabel" destination="SMy-tQ-udl" id="TPh-p4-NLM"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
