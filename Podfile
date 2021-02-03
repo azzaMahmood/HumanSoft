@@ -7,4 +7,5 @@ target 'HumanSoft' do
 
   # Pods for HumanSoft
 pod 'Alamofire', '~> 5.2'
+pod 'Kingfisher', '~> 6.0'
 end

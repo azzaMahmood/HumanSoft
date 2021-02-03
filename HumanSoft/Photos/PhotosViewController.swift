@@ -56,6 +56,4 @@ extension PhotosViewController: UICollectionViewDataSource, UICollectionViewDele
         return cell
     }
     
-    
-    
 }

@@ -6,17 +6,17 @@
 //
 
 import UIKit
+import Kingfisher
 
 class PhotoCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var galleryImageView: UIImageView!
     
     func configureCellDisplayImage(url: String) {
-        if let url = URL(string: url),  let data = try? Data(contentsOf: url) {
-            galleryImageView.image = UIImage(data: data)
-        // let data = try? Data(contentsOf: url)
-            
+        if let url = URL(string: url) {
+            galleryImageView.kf.setImage(with: url)
+
+               // self.galleryImageView.image = UIImage(data: data)
         }
-      //  self.albumTitleLabel.text = albumTitle
     }
 }
