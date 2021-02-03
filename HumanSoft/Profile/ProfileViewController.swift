@@ -61,9 +61,12 @@ extension ProfileViewController: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     
-//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        <#code#>
-//    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let photosViewController = storyboard?.instantiateViewController(withIdentifier: "PhotosViewController") as! PhotosViewController
+        photosViewController.title = albumsData?[indexPath.row].title
+        photosViewController.viewModel.albumId = albumsData?[indexPath.row].id ?? 1
+        navigationController?.pushViewController(photosViewController, animated: true)
+    }
     
 }
 
