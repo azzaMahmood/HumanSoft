@@ -18,7 +18,6 @@ class PhotosViewController: UIViewController {
         super.viewDidLoad()
         setupCollectionView()
         navigationController?.navigationBar.prefersLargeTitles = true
-        photosCollectionView.reloadData()
     }
     
     private func setupCollectionView() {
@@ -54,6 +53,14 @@ extension PhotosViewController: UICollectionViewDataSource, UICollectionViewDele
             cell.configureCellDisplayImage(url: photosData.url)
         }
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let zoomImageViewController = storyboard?.instantiateViewController(withIdentifier: "ZoomImageViewController") as! ZoomImageViewController
+        zoomImageViewController.title = photosData?[indexPath.item].title
+        zoomImageViewController.imageUrl = photosData?[indexPath.item].url ?? ""
+       // photosViewController.viewModel.albumId = albumsData?[indexPath.row].id ?? 1
+        navigationController?.pushViewController(zoomImageViewController, animated: true)
     }
     
 }

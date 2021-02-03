@@ -15,8 +15,6 @@ class PhotoCollectionViewCell: UICollectionViewCell {
     func configureCellDisplayImage(url: String) {
         if let url = URL(string: url) {
             galleryImageView.kf.setImage(with: url)
-
-               // self.galleryImageView.image = UIImage(data: data)
         }
     }
 }

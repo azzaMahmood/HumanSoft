@@ -171,6 +171,35 @@
             </objects>
             <point key="canvasLocation" x="1302.8985507246377" y="83.705357142857139"/>
         </scene>
+        <!--Zoom Image View Controller-->
+        <scene sceneID="emZ-vD-AGj">
+            <objects>
+                <viewController storyboardIdentifier="ZoomImageViewController" id="I2g-nb-ITi" customClass="ZoomImageViewController" customModule="HumanSoft" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gpB-1g-l61">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5BV-3b-u60">
+                                <rect key="frame" x="5" y="54" width="404" height="788"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="464-P3-DKf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="464-P3-DKf" firstAttribute="bottom" secondItem="5BV-3b-u60" secondAttribute="bottom" constant="20" id="O08-qK-oBF"/>
+                            <constraint firstItem="5BV-3b-u60" firstAttribute="leading" secondItem="464-P3-DKf" secondAttribute="leading" constant="5" id="Rle-eU-gXi"/>
+                            <constraint firstItem="5BV-3b-u60" firstAttribute="top" secondItem="464-P3-DKf" secondAttribute="top" constant="10" id="e6d-kV-wzl"/>
+                            <constraint firstItem="464-P3-DKf" firstAttribute="trailing" secondItem="5BV-3b-u60" secondAttribute="trailing" constant="5" id="o6n-kk-DIa"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="zoomImage" destination="5BV-3b-u60" id="AnV-8u-M2f"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tme-cd-dFM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2048" y="84"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="5QE-az-nbU">
             <objects>
